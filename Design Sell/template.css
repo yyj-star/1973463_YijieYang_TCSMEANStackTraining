@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(190, 250, 200);
+}
+
+.load-button-container{
+    display: flex;
+    align-items: center; 
+    text-align: center;
+}
+.load-button{
+    color:black;
+    background-color: lightblue; 
+    border-radius: 200px;
+    margin: auto; 
+    width: 100px;
+    height:50px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 1s;
+}
+.load-button:hover{
+    width:200px;
+    height:100px;
+    font-size: 20px
+}
+
+#main-div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px
+}
+
+.template-card{
+    width: 400px;
+    height: 500px;
+}
+
+img{
+    width:400px;
+    height:500px;
+    object-fit: contain;
+}
+
+#shopping-button{
+    float:right;
+    margin-right: 50px;
+}
+
+#buy-button{
+    float:left; 
+    margin-left:50px;
+}
+
+.buy-button{ 
+    border-radius: 100px;
+    color:black;
+    background-color: lightblue;
+    transition: 1s;
+    width: 100px;
+    height:50px;
+    font-size:auto
+}
+.buy-button:hover{
+    width:150px;
+    height:100px; 
+    font-size:auto
+}
