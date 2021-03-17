@@ -31,7 +31,7 @@ function calculateFinalBudget(){
     console.log('obj ', obj)
     let sum = 0
     for(let i = 0; i< obj.length; i++){
-      
+       
        sum += parseInt(obj[i].budgetNumber)
     }
     console.log(sum);

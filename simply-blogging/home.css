@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+}
+
+.cell{
+    background-color: rgb(rgb(245, 241, 4));
+    border: solid 2px black;
+    border-radius: 10px;
+    width: 100%;  
+    margin: 20px;
+    padding: 12px;
+    
+}
+
+.blog-title-p{
+    font-style: bold;
+    font-size: 20px; 
+}
+
+.btn-success:hover, .btn-light:hover{
+    width: 20%;
+}
+
+body{
+    background-color: rgb(161, 235, 112);
+}
