@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Cart</title>
+    <link rel="stylesheet" href="site.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src = 'main.js'></script>
+</head>
+<body>
+    <div class = 'container-fluid'>
+        <div class = 'shopping-cart'>
+            <h1>Shopping Cart</h1>
+            <p id ='cart-size', class = 'top-link'>Cart Size: </p>
+            <a href = 'checkout.html' class = 'top-link'>Checkout</a>
+            <hr/>
+            <div class ='row'>
+                <div class = 'col'>
+                    <div class ='card' style="width: 18rem;">
+                        <img src="k95.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Name: Corsair K95 RGB Platinum XT</h6>
+                            <input id = 'item-1-name' type="hidden" value = 'Corsair K95 RGB Platinum XT'/>
+                            <h6 class="card-title">Price: $164.99</h5>
+                            <input id = 'item-1-price' type="hidden" value = '164.99'/>
+                            <input type = 'button' value = 'Add To Cart' class = 'btn btn-success' onclick="addToCart(1)"/>
+                        </div>
+                    </div>
+                </div>
+                <div class = 'col'>
+                    <div class ='card' style="width: 18rem;">
+                        <img src="ENTR.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Name: Drop ENTR Mechanical Keyboard</h6>
+                                <input id = 'item-2-name' type="hidden" value = 'Drop ENTR Mechanical Keyboard'/>
+                                <h6 class="card-title">Price: $90</h6>
+                                <input id = 'item-2-price' type="hidden" value = '90'/>
+                                <input type = 'button' value = 'Add To Cart' class = 'btn btn-success' onclick="addToCart(2)"/>
+                        </div>
+                    </div>
+                </div>    
+                <div class = 'col'>
+                    <div class ='card' style="width: 18rem;">
+                        <img src='Apex7.jpg' class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Name: SteelSeries Apex 7 TKL</h6>
+                            <input id = 'item-3-name' type="hidden" value = 'SteelSeries Apex 7 TKL'/>
+                            <h6 class="card-title">Price: $129.99</h6>
+                            <input id = 'item-3-price' type="hidden" value = '129.99'/>
+                            <input type = 'button' value = 'Add To Cart' class = 'btn btn-success' onclick="addToCart(3)"/>
+                        </div>
+                    </div>
+                </div>
+                <div class = 'col'>
+                    <div class ='card' style="width: 18rem;">
+                        <img src="Alloy Origins.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Name: HyperX Alloy Origins</h6>
+                            <input id = 'item-4-name' type="hidden" value = 'HyperX Alloy Origins'/>
+                            <h6 class="card-title">Price: $104.99</h6>
+                            <input id = 'item-4-price' type="hidden" value = '104.99'/>
+                            <input type = 'button' value = 'Add To Cart' class = 'btn btn-success' onclick="addToCart(4)"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <!-- second row -->
+            <div class ='row'>
+                <div class = 'col'>
+                    <div class ='card' style="width: 18rem;">
+                        <img src="Kinesis.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Name: Kinesis Freestyle Edge RGB Split Mechanical Gaming Keyboard</h6>
+                            <input id = 'item-5-name' type="hidden" value = 'Kinesis Freestyle Edge RGB Split Mechanical Gaming Keyboard'/>
+                            <h6 class="card-title">Price: $378.99</h6>
+                            <input id = 'item-5-price' type="hidden" value = '378.99'/>
+                            <input type = 'button' value = 'Add To Cart' class = 'btn btn-success' onclick="addToCart(5)"/>
+                        </div>
+                    </div>
+                </div>
+                <div class = 'col'>
+                    <div class ='card' style="width: 18rem;">
+                        <img src="RazerPro.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Name: Razer Pro Type Wireless Mechanical Keyboard</h6>
+                            <input id = 'item-6-name' type="hidden" value = 'Razer Pro Type Wireless Mechanical Keyboard'/>
+                            <h6 class="card-title">Price: $139.99</h6>
+                            <input id = 'item-6-price' type="hidden" value = '139.99'/>
+                            <input type = 'button' value = 'Add To Cart' class = 'btn btn-success' onclick="addToCart(6)"/>
+                        </div>
+                    </div>
+                </div>    
+                <div class = 'col'>
+                    <div class ='card' style="width: 18rem;">
+                        <img src="DAS.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Name: Das Keyboard 4C TKL</h6>
+                            <input id = 'item-7-name' type="hidden" value = 'Das Keyboard 4C TKL'/>
+                            <h6 class="card-title">Price: $139.00</h6>
+                            <input id = 'item-7-price' type="hidden" value = '139.00'/>
+                            <input type = 'button' value = 'Add To Cart' class = 'btn btn-success' onclick="addToCart(7)"/>
+                        </div>
+                    </div>
+                </div>
+                <div class = 'col'>
+                    <div class ='card' style="width: 18rem;">
+                        <img src="G513.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Name: Logitech G513 Carbon</h6>
+                            <input id = 'item-8-name' type="hidden" value = 'Logitech G513 Carbon'/>
+                            <h6 class="card-title">Price: $140.14</h6>
+                            <input id = 'item-8-price' type="hidden" value = '140.14'/>
+                            <input type = 'button' value = 'Add To Cart' class = 'btn btn-success' onclick="addToCart(8)"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

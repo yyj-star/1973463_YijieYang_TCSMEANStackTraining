@@ -1,0 +1,15 @@
+.shopping-cart{
+    text-align: center;
+    border: 5px black solid; 
+    margin: 20px;
+    padding:10px;
+    background-color: rgb(225, 255, 203);
+}
+
+.top-link{
+    font-size: 20px;
+}
+
+thead,td{
+    text-align: left;
+}
