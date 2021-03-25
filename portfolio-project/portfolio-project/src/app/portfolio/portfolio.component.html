@@ -1,0 +1,30 @@
+<div class ='container'>
+    <div class = 'card'>
+        <h3>Welcome, {{username}}</h3>
+        <p>First Name: {{fname}}</p>
+        <p>Last Name: {{lname}}</p>
+        <br>
+        <h5>Add Contact Info</h5>
+        <form class = 'form' #contactInfo ='ngForm' (ngSubmit)="addContactInfo(contactInfo.value)">
+            <label class = 'form-label'>Contact Name</label>
+            <input class = 'form-control' name = 'contactName'ngModel type="text"/>
+            <br>
+            <label class = 'form-label'>Phone No.</label>
+            <input class = 'form-control' name = 'contactNumber'ngModel type="text"/>
+            <br>
+            <input type="submit" value = 'Save'>
+        </form>
+        <br>
+        <h6>Contact Details</h6>
+        <table border="1">
+            <tr>
+                <th>Contact Name</th>
+                <th>Contact Number</th>
+            </tr>
+            <tr *ngFor = "let obj of dataArray">
+                <td>{{obj.contactName}}</td>
+                <td>{{obj.contactNumber}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

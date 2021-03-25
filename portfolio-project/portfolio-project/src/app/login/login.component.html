@@ -1,0 +1,15 @@
+<div>
+    <div>
+        <h3>Log-in</h3>
+        <form class = 'form' #userRef = 'ngForm' (ngSubmit)="loginUser(userRef.value)">
+                <label class = 'form-label'>Username</label>
+                <input class = 'form-control' type="text" name = 'username' ngModel>
+                <br/>
+                <label class = 'form-label'>Password</label>
+                <input class = 'form-control' type="password" name = 'password' ngModel>
+                <br/>
+                <input type="submit" class = 'btn btn-success' value = 'Submit'/>
+                <input type = 'reset' class = 'btn btn-clear' value = 'Clear'/>
+        </form>
+    </div>
+</div>

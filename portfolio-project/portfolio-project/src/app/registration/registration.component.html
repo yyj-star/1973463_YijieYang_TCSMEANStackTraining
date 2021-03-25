@@ -1,0 +1,22 @@
+<div>
+    <input type="button" value ='Back to login' (click)="redirectLoginPage()"/> 
+    <form class = 'form' [formGroup]='signupInfo' (ngSubmit)="signupUser()">
+        <label class = 'form-label'>First Name</label>
+        <input class = 'form-control' type="text" formControlName ='fname'/>
+        <br>
+        <label class = 'form-label'>Last Name</label>
+        <input class = 'form-control' type="text" formControlName ='lname'/>
+        <br>
+        <label class = 'form-label'>UserName</label>
+        <input class = 'form-control' type="text" formControlName ='username'/>
+        <br>
+        <label class = 'form-label'> Password</label>
+        <input class = 'form-control'type='password' formControlName = 'password'>
+        
+        <br>
+        <input class = 'btn btn-success'type = 'submit' value = 'Register'/>
+        <input class = 'btn btn-clear' type="reset" value = 'Clear'>
+
+    </form>
+
+</div>
