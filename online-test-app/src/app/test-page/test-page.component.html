@@ -1,0 +1,360 @@
+<div class = 'card'>
+    <h1 class = 'headers'>Welcome to online test application!</h1>
+    <h2 class = 'headers'>Featuring Harry Potter Trivia!</h2>
+    <div class = 'card-body'>
+        <form #userAnswer = 'ngForm' (ngSubmit) = 'checkAnswer(userAnswer.value)'>
+            <div class = 'card'>
+                <div class = 'card-body'>
+                    <h5 class = 'card-title'>Question 1 </h5>
+                    <p class ='card-text'>What house is Harry Potter sorted into?</p>
+                   
+                    <input class = 'form-check-input' id = 'q1a' name = 'q1button' ngModel type="radio" value = 'Gryffindor' required/>
+                     <label for ='q1a'> A) Gryffindor</label>
+                    <br>
+                    <br>
+
+                    
+                    <input class = 'form-check-input' id = 'q1b' name = 'q1button'  ngModel type="radio" value = 'Hufflepuff' required/>
+                    <label for ='q1b'> B) Hufflepuff</label>
+                    <br>
+                    <br>
+                    
+                    <input class = 'form-check-input' id = 'q1c' name = 'q1button' ngModel type="radio" value = 'Ravenclaw' required/>
+                    <label for ='q1c'> C) Ravenclaw</label>
+                    <br>
+                    <br>
+                   
+                    <input class = 'form-check-input' id = 'q1d' name = 'q1button' ngModel type="radio" value = 'Slytherin' required/>
+                    <label for ='q1d'> D) Slytherin</label>
+                    <br> 
+                    <br>
+                    <div *ngIf = bool11>
+                        <p class = 'right-answer'>{{msg1}}</p> 
+                    </div>
+                    <div *ngIf = bool1>
+                        <p class = 'wrong-answer'>This answer is wrong, the correct answer is {{msg1}}</p> 
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <div class = 'card'>
+                <div class = 'card-body'>
+                    <h5 class = 'card-title'>Question 2 </h5>
+                    <p class ='card-text'>What other house did Harry almost get sorted into?</p>
+                    
+                    <input class = 'form-check-input' id = 'q2a' name = 'q2button' ngModel type="radio" value = 'Slytherin' required/>
+                    <label> A) Slytherin</label>
+                    <br>
+                    <br>
+                    
+                    <input class = 'form-check-input' id = 'q2b' name = 'q2button'  ngModel type="radio" value = 'Ravenclaw' required/>
+                    <label> B) Ravenclaw</label>
+                    <br>
+                    <br>
+                    
+                    <input class = 'form-check-input' id = 'q2c' name = 'q2button' ngModel type="radio" value = 'Hogwarts' required/>
+                    <label> C) Hogwarts</label>
+                    <br>
+                    <br>
+                    
+                    <input class = 'form-check-input' id = 'q2d' name = 'q2button' ngModel type="radio" value = 'None' required/>
+                    <label> D) None</label>
+                    <br> 
+                    <br>
+                    <div *ngIf = bool22>
+                        <p class = 'right-answer'>{{msg2}}</p> 
+                    </div>
+                    <div *ngIf = bool2>
+                        <p class = 'wrong-answer'>This answer is wrong, the correct answer is {{msg2}}</p> 
+                    </div>
+                </div>
+            </div>
+
+            <div class = 'card'>
+                <div class = 'card-body'>
+                    <h5 class = 'card-title'>Question 3 </h5>
+                    <p class ='card-text'>What is Harry’s position on the Quidditch team?</p>
+                    
+                    <input class = 'form-check-input' id = 'q3a' name = 'q3button' ngModel type="radio" value = 'Beater' required/>
+                    <label> A) Beater</label>
+                    <br>
+                    <br>
+                    
+                    
+                    <input class = 'form-check-input' id = 'q3b' name = 'q3button'  ngModel type="radio" value = 'Keeper' required/>
+                    <label> B) Keeper</label>
+                    <br>
+                    <br>
+                    
+                    
+                    <input class = 'form-check-input' id = 'q3c' name = 'q3button' ngModel type="radio" value = 'Seeker' required/>
+                    <label> C) Seeker</label>
+                    <br>
+                    <br>
+                    
+                    
+                    <input class = 'form-check-input' id = 'q3d' name = 'q3button' ngModel type="radio" value = 'Chaser' required/>
+                    <label> D) Chaser</label>
+                    <br>
+                    <br>
+                    <div *ngIf = bool33>
+                        <p class = 'right-answer'>{{msg3}}</p> 
+                    </div>
+                    <div *ngIf = bool3>
+                        <p class = 'wrong-answer'>This answer is wrong, the correct answer is {{msg3}}</p> 
+                    </div> 
+                </div>
+            </div>
+
+            <div class = 'card'>
+                <div class = 'card-body'>
+                    <h5 class = 'card-title'>Question 4 </h5>
+                    <p class ='card-text'>What’s the name of the three-headed dog that guards the door to the Sorcerer’s Stone?
+                    </p>
+                    
+                    <input class = 'form-check-input' id = 'q4a' name = 'q4button' ngModel type="radio" value = 'Scuffy' required/>
+                    <label> A) Scuffy</label>
+                    <br>
+                    <br>
+                    
+                    <input class = 'form-check-input' id = 'q4b' name = 'q4button'  ngModel type="radio" value = 'Fluffy' required/>
+                    <label> B) Fluffy</label>
+                    <br>
+                    <br>
+                    
+                    <input class = 'form-check-input' id = 'q4c' name = 'q4button' ngModel type="radio" value = 'Puffy' required/>
+                    <label> C) Puffy</label>
+                    <br>
+                    <br>
+                    
+                    <input class = 'form-check-input' id = 'q4d' name = 'q4button' ngModel type="radio" value = 'windfury' required/>
+                    <label> D) windfury</label>
+                    <br> 
+                    <br>
+                    <div *ngIf = bool44>
+                        <p class = 'right-answer'>{{msg4}}</p> 
+                    </div>
+                    <div *ngIf = bool4>
+                    <p class = 'wrong-answer'>This answer is wrong, the correct answer is {{msg4}}</p> 
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class = 'card'>
+                <div class = 'card-body'>
+                    <h5 class = 'card-title'>Question 5</h5>
+                    <p class ='card-text'>How many staircases does Hogwarts have?
+                    </p>
+                    
+                    <input class = 'form-check-input' id = 'q5a' name = 'q5button' ngModel type="radio" value = '142' required/>
+                    <label> A) 142</label>
+                    <br>
+                    <br>
+                    
+                    <input class = 'form-check-input' id = 'q5b' name = 'q5button'  ngModel type="radio" value = '152' required/>
+                    <label> B) 152</label>
+                    <br>
+                    <br>
+                    
+                    <input class = 'form-check-input' id = 'q5c' name = 'q5button' ngModel type="radio" value = '79' required/>
+                    <label> C) 79</label>
+                    <br>
+                    <br>
+                    
+                    <input class = 'form-check-input' id = 'q5d' name = 'q5button' ngModel type="radio" value = '162' required/>
+                    <label> D) 162</label>
+                    <br> 
+                    <br>
+                    <div *ngIf = bool55>
+                        <p class = 'right-answer'>{{msg5}}</p> 
+                    </div>
+                    <div *ngIf = bool5>
+                        <p class = 'wrong-answer'>This answer is wrong, the correct answer is {{msg5}}</p> 
+                    </div>
+                </div>
+            </div>
+
+            <div class = 'card'>
+                <div class = 'card-body'>
+                    <h5 class = 'card-title'>Question 6</h5>
+                    <p class ='card-text'>What are the three forbidden curses??
+                    </p>
+                    
+                    <input class = 'form-check-input' id = 'q6a' name = 'q6button' ngModel type="radio" value = 'Avada Kadavra, Imperius, Laceratious' required/>
+                    <label> A) Avada Kadavra, Imperius, Laceratious</label>
+                    <br>
+                    <br>
+                    
+                    <input class = 'form-check-input' id = 'q6b' name = 'q6button'  ngModel type="radio" value = 'Avada Kadavra, Imperius, Crucio' required/>
+                    <label> B) Avada Kadavra, Imperius, Crucio</label>
+                    <br>
+                    <br>
+                    
+                    <input class = 'form-check-input' id = 'q6c' name = 'q6button' ngModel type="radio" value = 'Avada Kadavra, Sectumsempra, Imperius' required/>
+                    <label> C) Avada Kadavra, Sectumsempra, Imperius</label>
+                    <br>
+                    <br>
+                    
+                    <input class = 'form-check-input' id = 'q6d' name = 'q6button' ngModel type="radio" value = 'Sectumsempra, Expelliarmus, Riddikulus' required/>
+                    <label> D) Sectumsempra, Expelliarmus, Riddikulus</label>
+                    <br> 
+                    <br>
+                    <div *ngIf = bool66>
+                        <p class = 'right-answer'>{{msg6}}</p> 
+                    </div>
+                    <div *ngIf = bool6>
+                        <p class = 'wrong-answer'>This answer is wrong, the correct answer is {{msg6}}</p> 
+                    </div>
+                </div>
+            </div>
+
+            <div class = 'card'>
+                <div class = 'card-body'>
+                    <h5 class = 'card-title'>Question 7</h5>
+                    <p class ='card-text'>Ron Weasley had a phobia for which insect?
+                    </p>
+                    
+                    <input class = 'form-check-input' id = 'q7a' name = 'q7button' ngModel type="radio" value = 'Spiders' required/>
+                    <label> A) Spiders</label>
+                    <br><br>
+                    
+                    
+                    <input class = 'form-check-input' id = 'q7b' name = 'q7button'  ngModel type="radio" value = 'Worms' required/>
+                    <label> B) Worms</label>
+                    <br><br>
+
+                    
+                    <input class = 'form-check-input' id = 'q7c' name = 'q7button' ngModel type="radio" value = 'Termites' required/>
+                    <label> C) Termites</label>
+                    <br><br>
+
+                    
+                    <input class = 'form-check-input' id = 'q7d' name = 'q7button' ngModel type="radio" value = 'Ants' required/>
+                    <label> D) Ants</label>
+                    <br> 
+                    <br>
+                    <div *ngIf = bool77>
+                        <p class = 'right-answer'>{{msg7}}</p> 
+                    </div>
+                    <div *ngIf = bool7>
+                        <p class = 'wrong-answer'>This answer is wrong, the correct answer is {{msg7}}</p> 
+                    </div>
+                </div>
+            </div>
+
+            <div class = 'card'>
+                <div class = 'card-body'>
+                    <h5 class = 'card-title'>Question 8</h5>
+                    <p class ='card-text'>In which book do Harry and Ginny share their first kiss?
+                    </p>
+                    
+                    <input class = 'form-check-input' id = 'q8a' name = 'q8button' ngModel type="radio" value = 'Harry Potter and Order Of Phoenix' required/>
+                    <label> A) Harry Potter and Order Of Phoenix</label>
+                    <br>
+                    <br>
+                    
+                    <input class = 'form-check-input' id = 'q8b' name = 'q8button'  ngModel type="radio" value = 'Harry Potter and the Half-Blood Prince' required/>
+                    <label> B) Harry Potter and the Half-Blood Prince</label>
+                    <br>
+                    <br>
+                    
+                    <input class = 'form-check-input' id = 'q8c' name = 'q8button' ngModel type="radio" value = 'Harry Potter and the Prisoner Of Azkaban' required/>
+                    <label> C) Harry Potter and the Prisoner Of Azkaban</label>
+                    <br>
+                    <br>
+                    
+                    <input class = 'form-check-input' id = 'q8d' name = 'q8button' ngModel type="radio" value = 'Harry Potter and the Goblet Of Fire' required/>
+                    <label> D) Harry Potter and the Goblet Of Fire</label>
+                    <br>
+                    <br> 
+                    <div *ngIf = bool88>
+                        <p class = 'right-answer'>{{msg8}}</p> 
+                    </div>
+                    <div *ngIf = bool8>
+                        <p class = 'wrong-answer'>This answer is wrong, the correct answer is {{msg8}}</p> 
+                    </div>
+                </div>
+            </div>
+
+            <div class = 'card'>
+                <div class = 'card-body'>
+                    <h5 class = 'card-title'>Question 9</h5>
+                    <p class ='card-text'>How do you free a house-elf?</p>
+                    
+                    <input class = 'form-check-input' id = 'q9a' name = 'q9button' ngModel type="radio" value = 'By giving him a wand' required/>
+                    <label> A) By giving him a wand</label>
+                    <br>
+                    <br>
+                    
+                    <input class = 'form-check-input' id = 'q9b' name = 'q9button'  ngModel type="radio" value = 'By giving him a hat' required/>
+                    <label> B) By giving him a hat</label>
+                    <br>
+                    <br>
+
+                    
+                    <input class = 'form-check-input' id = 'q9c' name = 'q9button' ngModel type="radio" value = 'By casting a spell on him' required/>
+                    <label> C) By casting a spell on him</label>
+                    <br>
+                    <br>
+
+                    
+                    <input class = 'form-check-input' id = 'q9d' name = 'q9button' ngModel type="radio" value = 'By giving them a piece of clothing' required/>
+                    <label> D) By giving them a piece of clothing</label>
+                    <br> 
+                    <br>
+                    <div *ngIf = bool99>
+                        <p class = 'right-answer'>{{msg9}}</p> 
+                    </div>
+                    <div *ngIf = bool9>
+                        <p class = 'wrong-answer'>This answer is wrong, the correct answer is {{msg9}}</p> 
+                    </div>
+                </div>
+            </div>
+
+            <div class = 'card'>
+                <div class = 'card-body'>
+                    <h5 class = 'card-title'>Question 10</h5>
+                    <p class ='card-text'>What does O.W.L. stand for?
+                    </p>
+                    
+                    <input class = 'form-check-input' id = 'q10a' name = 'q10button' ngModel type="radio" value = 'Outstanding Wizarding Level' required/>
+                    <label> A) Outstanding Wizarding Level</label>
+                    <br>
+                    <br>
+
+                    
+                    <input class = 'form-check-input' id = 'q10b' name = 'q10button'  ngModel type="radio" value = 'Ordinary Witchcraft Level' required/>
+                    <label> B) Ordinary Witchcraft Level</label>
+                    <br>
+                    <br>
+
+                    
+                    <input class = 'form-check-input' id = 'q10c' name = 'q10button' ngModel type="radio" value = 'Old Wizards Legion' required/>
+                    <label> C) Old Wizards Legion</label>
+                    <br>
+                    <br>
+
+                    
+                    <input class = 'form-check-input' id = 'q10d' name = 'q10button' ngModel type="radio" value = 'Ordinary Wizarding Level' required/>
+                    <label> D) Ordinary Wizarding Level</label>
+                    <br> 
+                    <br>
+                    <div *ngIf = bool1010>
+                        <p class = 'right-answer'>{{msg10}}</p> 
+                    </div>
+                    <div *ngIf = bool10>
+                        <p class = 'wrong-answer'>This answer is wrong, the correct answer is {{msg10}}</p> 
+                    </div>
+                </div>
+            </div>
+            <br>
+            <input class = 'btn btn-success' type="submit" value = 'submit' [disabled] = !userAnswer.valid>
+            <br>
+            <br>
+            <p class ='right-answer'>{{final_msg}} </p>
+        </form> 
+    </div>
+</div>
