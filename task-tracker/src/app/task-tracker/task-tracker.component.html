@@ -1,0 +1,55 @@
+<div>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Task Tracker</mat-card-title>
+            <mat-card-subtitle>Input a task to be tracked</mat-card-subtitle>
+        </mat-card-header>  
+        <mat-card-content>
+            <form #tasksInput = 'ngForm' (ngSubmit)="storeTask(tasksInput.value)">
+                <mat-form-field>
+                
+                    <mat-label>Id</mat-label>
+                    <input matInput type="text" name="id" ngModel/>
+                </mat-form-field> 
+                <br>
+
+                <mat-form-field>
+                    <mat-label>Name</mat-label>
+                    <input matInput type="text" name="name" ngModel/>
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                <mat-label>Task</mat-label>
+                <input matInput type="text" name="task" ngModel/>
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                <mat-label>Dead Line</mat-label>
+                <input matInput type="date" name="deadLine" ngModel/>
+                </mat-form-field>
+                <br>
+                <button mat-stroked-button color="primary" style="background-color: rgb(65, 204, 95);" type="submit">Store</button>
+                <button mat-stroked-button color="primary" style="background-color: rgb(241, 221, 35);" type="reset">Clear</button>
+            </form>
+            <br>
+
+            <table border = '1' id = 'display-table' >
+                <thead style = 'text-align: left;'>
+                    <tr>
+                        <th>Id</th>
+                        <th>Task Name</th>
+                        <th>Details</th>
+                        <th>DeadLine</th>
+                    </tr>
+                </thead>
+                     <tr *ngFor = 'let task of inboundDataArray'>
+                         <td>{{task.id}}</td>
+                         <td>{{task.name}}</td>
+                         <td>{{task.task}}</td>
+                         <td>{{task.deadLine}}</td>
+                     </tr>
+            </table>
+
+        </mat-card-content>
+    </mat-card>
+</div>

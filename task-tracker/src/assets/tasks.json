@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": "0",
+      "name": "Finish project",
+      "task": "Start and finish angular project about task tracker",
+      "deadLine": "2021-03-30"
+    },
+    {
+      "id": "1",
+      "name": "hw",
+      "task": "get math hw done ",
+      "deadLine": "2021-03-31"
+    },
+    {
+      "id": "2",
+      "name": "music Hw",
+      "task": "Get music hw done ",
+      "deadLine": "2021-04-02"
+    }
+  ]
+}
